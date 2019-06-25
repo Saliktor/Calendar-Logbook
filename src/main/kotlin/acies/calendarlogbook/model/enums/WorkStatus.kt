@@ -1,13 +1,13 @@
 package acies.calendarlogbook.model.enums
 
-enum class WorkStatus {
-    WORKING {
+enum class WorkStatus(status: Int) {
+    WORKING(0) {
         override fun getColor() = Color.BLUE
     },
-    TENTATIVE {
+    TENTATIVE(1) {
         override fun getColor() = Color.GREEN
     },
-    NOT_WORKING {
+    NOT_WORKING(2) {
         override fun getColor() = Color.RED
     };
 
