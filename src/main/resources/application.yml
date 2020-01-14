@@ -1,14 +1,15 @@
 #https://www.baeldung.com/spring-boot-h2-database
 spring:
     datasource:
-        url: jdbc:h2:file:~/data/calendar-logbook;AUTO_SERVER=TRUE
+#        url: jdbc:h2:file:~/data/calendar-logbook;AUTO_SERVER=TRUE
+        url: jdbc:h2:mem:testdb
         driverClassName: org.h2.Driver
         username: sa
-        password: password
+        password:
     jpa:
         database-platform: org.hibernate.dialect.H2Dialect
         hibernate:
-            ddl-auto: update
+            ddl-auto: none
 
 
 #Enable the H2 Console

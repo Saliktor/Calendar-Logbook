@@ -1,4 +1,4 @@
-package acies.calendarlogbook.dto
+package acies.calendarlogbook.persistence.dto
 
 import java.io.Serializable
 import java.time.LocalDateTime
@@ -12,9 +12,5 @@ data class Log(
 
         var rowNumber: Long,
 
-        var message: String = "",
-
-        var startTime: LocalDateTime? = null,
-
-        var endTime: LocalDateTime?= null
+        var message: String = ""
 ): Serializable
